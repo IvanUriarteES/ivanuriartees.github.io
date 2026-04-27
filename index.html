@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iván Uriarte</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.left {
+  flex: 1;
+}
+
+.left h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+.line {
+  width: 60px;
+  height: 2px;
+  background: red;
+  margin: 20px 0;
+}
+
+.genre {
+  opacity: 0.6;
+  letter-spacing: 2px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 25px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: red;
+  border-color: red;
+}
+
+/* IMAGE */
+.right {
+  flex: 1;
+  height: 80vh;
+  background: url('foto.jpg') center/cover no-repeat;
+}
+
+/* SECTIONS */
+section {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+h2 {
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+.wave {
+  margin: 30px auto;
+  width: 200px;
+  height: 2px;
+  background: red;
+}
+
+.social a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  opacity: 0.5;
+}
+
+/* MOBILE */
+@media(max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .left h1 {
+    font-size: 2.5rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div>IVÁN URIARTE</div>
+  <div>
+    <a href="#music">MÚSICA</a>
+    <a href="#social">REDES</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="left">
+    <h1>IVÁN<br>URIARTE</h1>
+    <div class="line"></div>
+    <div class="genre">POP | EXPERIMENTAL</div>
+    <a href="#music" class="btn">ESCUCHAR PRÓXIMAMENTE</a>
+  </div>
+
+  <div class="right"></div>
+</div>
+
+<section id="music">
+  <h2>MÚSICA</h2>
+  <div class="wave"></div>
+  <p>Próximos lanzamientos muy pronto.</p>
+</section>
+
+<section id="social" class="social">
+  <h2>REDES</h2>
+  <div class="wave"></div>
+  <a href="https://instagram.com/ivanuriartees" target="_blank">
+    @ivanuriartees
+  </a>
+</section>
+
+<footer>
+  © 2026 Iván Uriarte
+</footer>
+
+</body>
+</html>
